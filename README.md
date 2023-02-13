@@ -18,7 +18,7 @@ cancer or anything by himself instantly. This project also includes a website fo
 hospitals, labs, pharmacies and doctors to control their sections.
 <br>
 <br>
-**PROBLEM DEFINITION **
+*** PROBLEM DEFINITION ***
 Many people may face difficulties to consult a doctor, to purchase medicines and for 
 other medical related purposes because of lack of transportation, financial issues, health 
 problems, etc... Especially like in this time of pandemic it is not also safe to go outside our 
