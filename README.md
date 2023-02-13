@@ -36,7 +36,7 @@ money and makes their lives more comfortable.
 pharmacies or check for the tests in the nearest laboratories. 
 • Predicting Cancer: People can check the status of their X-ray report with the help 
 of SVM classifier<br>
- <b>MOTIVATION</b><br>
+ # MOTIVATION
  
  The motivation for doing this project was the present pandemic era where we all 
 are facing difficulties to consult a doctor safely or to go outside our homes for purchasing 
