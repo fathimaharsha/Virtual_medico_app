@@ -1,5 +1,5 @@
 # Virtual medico app
-<br>
+
 <br>
 Usually, people may consult doctor and he will identify their illness and 
 prescribe the necessary medicines. But there can be situations where we will not be able to do a 
@@ -18,7 +18,7 @@ cancer or anything by himself instantly. This project also includes a website fo
 hospitals, labs, pharmacies and doctors to control their sections.
 <br>
 <br>
-#<b> PROBLEM DEFINITION </b><br>
+# PROBLEM DEFINITION 
 Many people may face difficulties to consult a doctor, to purchase medicines and for 
 other medical related purposes because of lack of transportation, financial issues, health 
 problems, etc... Especially like in this time of pandemic it is not also safe to go outside our 
