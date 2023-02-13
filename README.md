@@ -23,7 +23,7 @@ Many people may face difficulties to consult a doctor, to purchase medicines and
 other medical related purposes because of lack of transportation, financial issues, health 
 problems, etc... Especially like in this time of pandemic it is not also safe to go outside our 
 homes. Also, sometimes due to absence of proper treatment or awareness, people may fed up 
-with seriously health issues in the course oof time. 
+with seriously health issues in the course oof time. <br>
 <b>OBJECTIVES</b><br>
 The main objective of the project was to introduce a Virtual Doctor into the tips of our 
 fingers who may consult and treat our issues easily. No one should face a situation of not 
@@ -35,7 +35,7 @@ money and makes their lives more comfortable.
 • Pharmacy and Laboratory Services: People can order medicine from the nearest 
 pharmacies or check for the tests in the nearest laboratories. 
 • Predicting Cancer: People can check the status of their X-ray report with the help 
-of SVM classifier
+of SVM classifier<br>
  <b>MOTIVATION</b><br>
  
  The motivation for doing this project was the present pandemic era where we all 
