@@ -18,13 +18,13 @@ cancer or anything by himself instantly. This project also includes a website fo
 hospitals, labs, pharmacies and doctors to control their sections.
 <br>
 <br>
-<b>PROBLEM DEFINITION </b><br>
+<b>PROBLEM DEFINITION </b><br><br>
 Many people may face difficulties to consult a doctor, to purchase medicines and for 
 other medical related purposes because of lack of transportation, financial issues, health 
 problems, etc... Especially like in this time of pandemic it is not also safe to go outside our 
 homes. Also, sometimes due to absence of proper treatment or awareness, people may fed up 
-with seriously health issues in the course oof time. <br>
-<b>OBJECTIVES</b><br>
+with seriously health issues in the course oof time. <br><br>
+<b>OBJECTIVES</b><br><br>
 The main objective of the project was to introduce a Virtual Doctor into the tips of our 
 fingers who may consult and treat our issues easily. No one should face a situation of not 
 getting a proper consultation or medicine in this digital world. Anyone can take an appointment 
@@ -35,10 +35,18 @@ money and makes their lives more comfortable.
 • Pharmacy and Laboratory Services: People can order medicine from the nearest 
 pharmacies or check for the tests in the nearest laboratories. 
 • Predicting Cancer: People can check the status of their X-ray report with the help 
-of SVM classifier<br>
-<b> MOTIVATION</b><br>
+of SVM classifier<br><br>
+<b> MOTIVATION</b><br><br>
  
  The motivation for doing this project was the present pandemic era where we all 
 are facing difficulties to consult a doctor safely or to go outside our homes for purchasing 
 medicines, taking appointments, etc. So, people need a more effective solution for an instant and 
 safer solution for their health-related purposes.
+<br><br>
+<b>METHODOLOGY </b><br>
+There are various project management methodologies. We choose the traditional and 
+sequential methodology “Water fall” for doing our project. With this methodology, the tasks 
+are sequenced that lead to a final deliverable product. With this, one task must be completed 
+before the next one begins, in a connected sequence of items that add up to the overall 
+deliverable. The reason behind the selection of this method was that every step is preplanned 
+and laid out in the proper sequence.
