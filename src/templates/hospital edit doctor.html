@@ -1,0 +1,174 @@
+{% extends 'hospitalindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width, ">-->
+<!--<title>hospital edit doctor</title>-->
+<style type="text/css">
+
+	table
+		{
+		background-color:rgb(0,0,0,0.1);
+		color:white;
+		}
+		
+		#title
+		{
+		  font-size:30px;
+		  letter-spacing:3px;
+		  font-weight:900;
+		}
+	input
+		{
+		background-color:transparent;
+		border:none;
+		border-bottom:1px  solid #555;
+		outline:none;
+		color:white;
+		}
+	#submit
+		{
+		width:100%;
+		height:50px;
+		font-weight:900;
+		background-color:transparent;
+		border:1px solid #fff;
+		letter-spacing:2px;
+		font-weight:900;
+		font-size:20px;
+		
+		}
+			#submit:hover{
+		box-shadow:0px 0px 5px #fff;
+		  
+		}
+	p
+		{
+		font-weight:900;
+		letter-spacing:2px;
+		}
+</style>
+</head>
+<body>
+	<form action="/editdoctor" method="post" enctype="multipart/form-data">
+		<table cellspacing="30" align="center">
+			<tr>
+			<td colspan="2" align="center" id="title">EDIT DOCTOR</td>
+			</tr>
+			<tr>
+			<td>
+			<p>First Name</p>
+			</td>
+			<td>
+			<input type="name" name="fname" value="{{val[2]}}" required autofocus>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Last Name</p>
+			</td>
+			<td>
+			<input type="name" name="lname" value="{{val[3]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>PROFILE PHOTO</p>
+			</td>
+			<td>
+				<img src="./static/dr/{{val[15]}}" height="50px" width="50px"/>
+			<input type="file" name="photo" >
+			</td>
+			</tr>
+		   <tr>
+			<td>
+			<p>DOB</p>
+			</td>
+			<td>
+			<input type="date" name="dob" value="{{val[12]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Gender</p>
+			</td>
+			<td>
+			male<input type="radio" name="gender" value="male"{%if val[4]=="male" %}checked{%endif%}>
+			female<input type="radio" name="gender" value="female"{%if val[4]=="female" %}checked{%endif%}>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Qualification</p>
+			</td>
+			<td>
+			<input type="text" name="qualification" value="{{val[5]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>specialization</p>
+			</td>
+			<td>
+			<input type="text" name="specialization" value="{{val[6]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Place</p>
+			</td>
+			<td>
+			<input type="text" name="place" value="{{val[7]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Post</p>
+			</td>
+			<td>
+			<input type="text" name="post" value="{{val[8]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Pin</p>
+			</td>
+			<td>
+			<input type="number" name="pin" value="{{val[9]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>E-mail</p>
+			</td>
+			<td>
+			<input type="email" name="email" value="{{val[10]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Phone</p>
+			</td>
+			<td>
+			<input type="number" name="phone" value="{{val[11]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Duty time</p>
+			</td>
+			<td>
+			<input type="text" name="duty"   value="{{val[16]}}"required>
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2">
+			<input type="submit" value="EDIT DOCTOR" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+{%endblock%}
+<!--</html>-->

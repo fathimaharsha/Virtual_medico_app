@@ -1,0 +1,70 @@
+{% extends 'adminindex.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<title>view pharmacy</title>-->
+	<style type="text/css">
+			body
+		{
+		background:linear-gradient(#3455a4,#0865a0);
+		}
+		table
+			{
+			 text-align:center;
+			 width:100%;
+
+			color: white;
+			}
+		th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:transparent;
+			border: 1px solid #000;
+			}
+	</style>
+</head>
+
+<body>
+	<table cellspacing="2">
+	  <caption><h3>PHARMACY</h3></caption>
+		<tr>
+			<th>Name</th>
+			<th>Place</th>
+			<th>Post</th>
+			<th>Pin</th>
+			<th>E-mail</th>
+			<th>Phone</th>
+			<th>Delete</th>
+			<th>status</th>
+			<th>Block/Unblock</th>
+		</tr>
+		{%for i in val%}
+			<tr>
+			<td>{{i[2]}}</td>
+			<td>{{i[3]}}</td>
+			<td>{{i[4]}}</td>
+			<td>{{i[5]}}</td>
+			<td>{{i[6]}}</td>
+			<td>{{i[7]}}</td>
+			<td><a href="/deletepp?id={{i[1]}}" style="color:white" onclick="return confirm('are you sure')">DELETE</a></td>
+			<td>{{i[9]}}</td>
+			<td><a href="/blockp?id={{i[1]}}" style="color:white">BLOCK</a><br><br><a href="/unblockp?id={{i[1]}}" style="color:white">UNBLOCK</a></td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+{%endblock%}
+<!--</html>-->

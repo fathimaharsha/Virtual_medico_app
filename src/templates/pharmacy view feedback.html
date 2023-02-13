@@ -1,0 +1,56 @@
+{% extends 'pharmacyindex.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>view feedback</title>-->
+	<style type="text/css">
+			table
+			{
+			 width:100%;
+			 text-align:center;
+			border-color: linen;
+			color: white;
+			}
+			th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:linen;
+			border: 1px solid blue;
+			}
+	</style>
+</head>
+
+<body>
+	<table cellspacing="2">
+	  <caption><h3>FEEDBACK</h3></caption>
+		<tr>
+			<th>Date</th>
+			<th>User</th>
+			<th>Feedback</th>
+		</tr>
+			<tr>
+			{%for i in val%}
+			<td>{{i[5]}}</td>
+			<td>{{i[0]}}{{i[1]}}</td>
+			<td>{{i[4]}}</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+<!--</html>-->{% endblock %}
+
+

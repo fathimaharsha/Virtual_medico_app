@@ -1,0 +1,65 @@
+{% extends 'hospitalindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>edit department</title>-->
+<style type="text/css">
+
+	table
+		{
+		margin-top:10%;
+		text-align:center;
+		width:100%;
+		color:white;
+		}
+	caption{
+	  letter-spacing:3px;
+	  margin-bottom:30px;
+	}
+	#text{
+	  font-family:Times New Roman;
+	  width:90%;
+	  padding:10px;
+	  border:1px solid #fff;
+	  background-color:transparent;
+	}
+	#submit
+		{
+		width:80%;
+		letter-spacing:2px;
+		font-weight:200;
+		color:#fff;
+		font-size:20px;
+		padding:5px;
+		background-color:transparent;
+		border:1px solid #fff;
+		}
+</style>
+</head>
+<body>
+	<form action="/edit_dept" method="post">
+		<table cellspacing="0">
+			<caption><h2>EDIT DEPARTMENT</h2></caption>
+			<tr>
+			<td> 
+			<input type="text" placeholder="DEPARTMENT NAME" name="deptname" id="text" value="{{i[2]}}" required autofocus>
+			</td>
+			</tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr align="center">
+			<td>
+				<textarea rows="10" columns="10"id="text" name="description" placeholder="DESCERIPTION...." required>{{i[3]}}</textarea>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<input type="submit" value="UPDATE" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+<!--</html>-->
+{%endblock%}

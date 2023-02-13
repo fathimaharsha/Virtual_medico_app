@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	    <style type="text/css" media="all">
+	      *{
+        padding:0;
+        margin:0;
+        letter-spacing:2px;
+      }
+    	 body{
+    	   display:flex;
+    	   flex-direction:column;
+    	   justify-content:center;
+    	   align-items:center;
+    	   background:linear-gradient(90deg,#3780ff,#378088);
+    	   margin:10px;
+    	   min-height:90vh;
+    	   }
+    	   #box{
+    	     width:70%;
+    	   }
+    	 p{
+    	   border:1px solid rgb(250,250,250);
+    	   color:white;
+    	   font-weight:900;
+    	   text-decoration:none;
+    	   display:inline-block;
+    	   width:100%;
+    	   padding:10px;
+    	   transition:500ms;
+    	 }
+    	 p:hover{
+    	   border:5px solid rgb(250,250,250);
+    	   background-color:rgb(250,250,250);
+    	   color:#3780ff;
+    	 }
+    	     </style>
+</head>
+
+<body>
+<table id="box" cellspacing="10">
+	<tr>
+	<td>
+   <a href="/admin_complaint?type=doctor"><p>DOCTOR</p></a><br>
+	</td>
+	</tr>
+		<tr>
+	<td>
+	<a href="/admin_complaint?type=user"><p>USER</p></a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

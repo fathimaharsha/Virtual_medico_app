@@ -1,0 +1,62 @@
+
+{% extends 'index.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>doctor view booking</title>-->
+	<style type="text/css">
+			body
+		{
+
+		}
+		table
+			{
+			 text-align:center;
+			 width:100%;
+			border-color: linen;
+			color:#000;
+			}
+		caption{
+		  margin:10px;
+		  letter-spacing:2px;
+		  color:#fff;
+		}
+				th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+	</style>
+</head>
+
+<body>
+	<table cellspacing="1">
+	  <caption><h3>BOOKING</h3></caption>
+		<tr>
+			<th>PATIENT NAME</th>
+			<th>DATE</th>
+			<th></th>
+		</tr>
+
+			<tr>
+				{%for i in val%}
+			<td>{{i[0]}} {{i[1]}}</td>
+			<td>{{i[5]}}</td>
+			<td>
+				<a href="/approveb?id={{i[2]}}" style="color:white">accept</a> <br>
+				<a href="/deleteb?id={{i[2]}}" style="color:white">reject</a>
+			</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+<!--</html>-->
+{%endblock%}

@@ -1,0 +1,90 @@
+{% extends 'hospitalindex.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>room booking</title>-->
+	<style type="text/css">
+	*{
+	  margin:0px;
+	  padding:0px;
+	}
+
+		table
+			{
+			  text-align:center;
+			  width:100%;
+			  margin:5px;
+			  border-color:#fff;
+			  color:#333;
+			}
+		caption
+			{
+			  color:#fff;
+			  margin:10px;
+			  letter-spacing:1px;
+			}
+			th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		input
+			{
+			margin:5px 0px 5px 0px;
+			padding:2px;
+			width:100%;
+			color:#333;
+			background:transparent;
+			border:1px solid #000;
+			font-weight:600;
+			}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:linen;
+			border: 1px solid blue;
+			}
+	</style>
+</head>
+
+<body>
+  <center>
+	<table cellspacing="1" border="0">
+	  <caption><h3>ROOM BOOKING</h3></caption>
+		<tr>
+			<th>DATE</th>
+			<th>NAME</th>
+			<th>ADDRESS</th>
+			<th>PHONE</th>
+			<th>E-MAIL</th>
+			<th>ROOM TYPE</th>
+			<th></th>
+		</tr>
+			<tr>
+			{%for i in val%}
+			<td>{{i[0]}}</td>
+			<td>{{i[4]}}{{i[5]}}</td>
+			<td>{{i[8]}}<br>{{i[9]}}(po)<br>{{i[10]}}</td>
+			<td>{{i[11]}}</td>
+			<td>{{i[12]}}</td>
+			<td>{{i[1]}}</td>
+			<td>
+			<a href="/approver?id={{i[13]}}" style="color:white">APPROVE</a>
+			<a href="/deleter?id={{i[13]}}" style="color:white">REJECT</a>
+			</td>
+		</tr>
+		{%endfor%}
+	</table>
+	</center>
+</body>
+{%endblock%}
+<!--</html>-->

@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<title>view notification</title>-->
+	<style type="text/css">
+			body
+		{
+
+		}
+		table
+			{
+			 text-align:center;
+			 width:100%;
+			border-color: linen;
+			color: white;
+			}
+				th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:#ccc;
+			border: 1px solid #000;
+			}
+	</style>
+</head>
+
+<body>
+	<table cellspacing="1">
+	  <caption><h3>NOTIFICATIONS</h3></caption>
+		<tr>
+			<th>DATE</th>
+			<th>NOTIFICATION</th>
+		</tr>
+		{% for i in val%}
+			<tr>
+			<td>{{i[2]}}</td>
+			<td>{{i[1]}}</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+{%endblock%}
+<!--</html>-->
+

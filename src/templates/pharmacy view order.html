@@ -1,0 +1,86 @@
+{% extends 'pharmacyindex.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>view order</title>-->
+	<style type="text/css">
+	*{
+	  margin:0px;
+	  padding:0px;
+	}
+
+		table
+			{
+			  text-align:center;
+			  width:100%;
+			  margin:5px;
+			  border-color:#fff;
+			  color:#333;
+			}
+		caption
+			{
+			  color:#fff;
+			  margin:10px;
+			  letter-spacing:1px;
+			}
+			th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		input
+			{
+			margin:5px 0px 5px 0px;
+			padding:2px;
+			width:100%;
+			color:#333;
+			background:transparent;
+			border:1px solid #000;
+			font-weight:600;
+			}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:linen;
+			border: 1px solid blue;
+			}
+	</style>
+</head>
+
+<body>
+  <center>
+	<table cellspacing="1" border="0">
+	  <caption><h3>ORDER</h3></caption>
+		<tr>
+			<th>MEDICINE NAME</th>
+			<th>USER</th>
+			<th>DATE</th>
+			<th>QUANTITY</th>
+			<th></th>
+		</tr>
+		{% for i in val %}
+			<tr>
+			<td>{{i[0]}}</td>
+			<td>{{i[1]}} {{i[2]}}</td>
+			<td>{{i[3]}}</td>
+			<td>{{i[4]}}</td>
+			<td>
+			<a href="/approveo?id={{i[6]}}&lid={{i[7]}}" style="color:white">APPROVE</a>
+			<a href="/deleteo?uid={{i[1]}}&oid={{i[6]}}&loginid={{i[7]}}" style="color:white">REJECT</a>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	</center>
+</body>
+{% endblock %}
+<!--</html>-->

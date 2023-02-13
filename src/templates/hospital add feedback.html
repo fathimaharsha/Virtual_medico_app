@@ -1,0 +1,71 @@
+{% extends 'hospitalindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>add feedback</title>-->
+<style type="text/css">
+
+	table
+		{
+		margin-top:10%;
+		text-align:center;
+		width:100%;
+		color:white;
+		}
+	caption{
+	  letter-spacing:3px;
+	  margin-bottom:30px;
+	}
+	#text{
+	  font-family:Times New Roman;
+	  width:60%;
+	  padding:10px;
+	  border:1px solid #fff;
+	  background-color:transparent;
+	}
+	#submit
+		{
+		width:40%;
+		letter-spacing:2px;
+		font-weight:200;
+		color:#fff;
+		font-size:20px;
+		padding:5px;
+		background-color:transparent;
+		border:1px solid #fff;
+		}
+	::placeholder{
+	color:#fff;
+	}
+</style>
+</head>
+<body>
+	<form action="/hfeedback" method="post">
+		<table cellspacing="0">
+			<caption><h2>ADD FEEDBACK</h2></caption>
+			<tr align="center">
+			<td>
+				<textarea rows="10" columns="10"id="text" name="feedback" placeholder="Enter your feedback...." required autofocus></textarea>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<input type="submit" value="SUBMIT" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+{%endblock%}
+<!--</html>-->

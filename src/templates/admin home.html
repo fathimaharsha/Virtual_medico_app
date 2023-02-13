@@ -1,0 +1,100 @@
+{% extends 'adminindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
+<!--    <meta name="viewport" content="width=device-width">-->
+<!--    <title>admin home page</title>-->
+
+    <style type="text/css" media="all">
+ body{
+
+    	   }
+    	   #box{
+    	     width:70%;
+    	   }
+
+    	 p{
+    	   border:1px solid rgb(250,250,250);
+    	   color:white;
+    	   font-weight:900;
+    	   text-decoration:none;
+    	   display:inline-block;
+    	   width:100%;
+    	   padding:10px;
+    	   transition:500ms;
+    	 }
+    	 p:hover{
+    	   border:5px solid rgb(250,250,250);
+    	   background-color:rgb(250,250,250);
+    	   color:#3780ff;
+    	 }
+    </style>
+  </head>
+  <body>
+    <table border="0" id="box" cellspacing="10" align="center">
+      <caption><h2>ADMIN HOME</h2></caption>
+         <tr>
+        <td>
+        <a href="/hospitala"><p style="text-align:center">APPROVE HOSPITAL<span style="float:right;font-size:15px;background-color:rgb(0,0,0,0.2);border-radius:100%;width:20px;text-align:center;font-weight:100;">{{val[0]}}</span></p></a>
+        </td>
+      </tr>
+            <tr>
+        <td>
+        <a href="/viewhospital"><p>MANAGE HOSPITAL</p></a>
+        </td>
+      </tr>
+           <tr>
+        <td>
+        <a href="/pharmacy"><p style="text-align:center">APPROVE PHARMACY<span style="float:right;font-size:15px;background-color:rgb(0,0,0,0.2);border-radius:100%;width:20px;text-align:center;font-weight:100;">{{val[1]}}</span></p></a>
+        </td>
+      </tr>
+           <tr>
+        <td>
+        <a href="/viewpharmacy"><p>MANAGE PHARMACY</p></a>
+        </td>
+      </tr>
+           <tr>
+        <td>
+        <a href="/alab"><p style="text-align:center">APPROVE LAB<span style="float:right;font-size:15px;background-color:rgb(0,0,0,0.2);border-radius:100%;width:20px;text-align:center;font-weight:100;">{{val[2]}}</span></p></a>
+        </td>
+      </tr>
+         <tr>
+        <td>
+        <a href="/viewlab"><p>MANAGE LAB</p></a>
+        </td>
+      </tr>
+     <tr>
+        <td>
+        <a href="/notification"><p>ADD NOTIFICATION</p></a>
+        </td>
+      </tr>
+
+
+
+         <tr>
+        <td>
+        <a href="/view_notification"><p>MANAGE NOTIFICATION</p></a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        <a href="/admin_complaint"><p>MANAGE COMPLAINTS</p></a>
+        </td>
+     </tr>
+       <tr>
+        <td>
+        <a href="/admin_wfeed"><p>VIEW FEEDBACK</p></a>
+        </td>
+
+       </tr>
+
+
+      
+    </table>
+    
+  </body>
+{%endblock%}
+<!--</html>-->

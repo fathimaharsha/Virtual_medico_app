@@ -1,0 +1,147 @@
+{% extends 'registerindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width, ">-->
+<!--<title>add hospital</title>-->
+<style type="text/css">
+		body
+	{
+
+		}
+	table
+		{
+		transform: scale(1,.9);
+		color:white;
+		width:50%;
+		text-align:left;
+		}
+
+		#title
+		{
+		  font-size:30px;
+		  letter-spacing:3px;
+		  font-weight:900;
+		}
+	input
+		{
+		width:100%;
+		background-color:transparent;
+		border:none;
+		border-bottom:1px  solid #555;
+		outline:none;
+		color:white;
+		}
+	#submit
+		{
+		width:50%;
+		height:50px;
+		font-weight:900;
+		background-color:transparent;
+		border:1px solid #fff;
+		letter-spacing:2px;
+		font-weight:900;
+		font-size:20px;
+
+		}
+			#submit:hover{
+		box-shadow:0px 0px 5px #fff;
+		 background:#fff;
+		 color:#000;
+		}
+	p
+		{
+		font-weight:900;
+		letter-spacing:2px;
+		}
+</style>
+</head>
+<body>
+	<form action="hospital_register" method="post" enctype="multipart/form-data">
+		<table cellspacing="30" align="center">
+			<tr>
+			<td colspan="2" align="center" id="title">HOSPITAL</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Name</p>
+			</td>
+			<td>
+			<input type="text" name="name"  required autofocus>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Place</p>
+			</td>
+			<td>
+			<input type="text" name="place" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Post</p>
+			</td>
+			<td>
+			<input type="text" name="post" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Pin</p>
+			</td>
+			<td>
+			<input type="text" name="pin" pattern="[0-9]{6}"  required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>E-mail</p>
+			</td>
+			<td>
+			<input type="email" name="email" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Phone</p>
+			</td>
+			<td>
+			<input type="tel" name="phone"  pattern="[6	789][0-9]{9}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Proof</p>
+			</td>
+			<td>
+			<input type="file" name="proof"  required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>username</p>
+			</td>
+			<td>
+			<input type="text" name="username" minlength="5" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>password</p>
+			</td>
+			<td>
+			<input type="password" name="password" minlength="8" required>
+			</td>
+			</tr>
+			<tr>
+						<td colspan="2" style="text-align:center;">
+			<input type="submit" value="ADD HOSPITAL" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+{%endblock%}
+<!--</html>-->

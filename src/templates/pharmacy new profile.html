@@ -1,0 +1,128 @@
+{% extends 'pharmacyindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width, ">-->
+<!--<title>new profile</title>-->
+<style type="text/css">
+
+
+	table
+		{
+		transform: scale(1.2,1.2);
+		background-color:rgb(0,0,0,0.1);
+		color:white;
+		}
+			#title
+		{
+		  font-size:30px;
+		  letter-spacing:3px;
+		  font-weight:900;
+		}
+	table:hover{
+	  box-shadow:0px 0px 5px #fff;
+	}
+	input
+		{
+		width: 100%;
+		background-color:transparent;
+		border:none;
+		border-bottom:1px  solid #aaa;
+		outline:none;
+		color:white;
+		}
+	#submit
+		{
+		width:100%;
+		height:50px;
+		font-weight:900;
+		background-color:transparent;
+		border:1px solid #fff;
+		letter-spacing:2px;
+		font-weight:900;
+		font-size:20px;
+		}
+		#submit:hover{
+		box-shadow:0px 0px 5px #fff;
+		  
+		}
+	p
+		{
+		font-weight:250;
+		}
+</style>
+</head>
+<body>
+	<form action="/pharmacyregister" method="post" enctype="multipart/form-data">
+		<table cellspacing="30" align="center">
+			<tr>
+			<td colspan="2" align="center" id="title">NEW PROFILE</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Name</p>
+			</td>
+			<td>
+			<input type="name" name="name" value="{{val[2]}}" required autofocus>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Place</p>
+			</td>
+			<td>
+			<input type="text" name="place" value="{{val[3]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Post</p>
+			</td>
+			<td>
+			<input type="text" name="post" value="{{val[4]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Pin</p>
+			</td>
+			<td>
+			<input type="text" name="pin" pattern="[0-9]{6}" value="{{val[5]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>E-mail</p>
+			</td>
+			<td>
+			<input type="email" name="email" value="{{val[6]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Phone</p>
+			</td>
+			<td>
+			<input type="tel" name="phone"  pattern="[789][0-9]{9}" value="{{val[7]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Proof</p>
+			</td>
+			<td>
+				<img src="./static/proof/{{val[8]}}" height="50px" width="50px"/>
+			<input type="file" name="proof">
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2">
+			<input type="submit" value="UPDATE" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+{% endblock %}
+<!--</html>-->

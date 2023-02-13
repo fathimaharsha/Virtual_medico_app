@@ -1,0 +1,125 @@
+{% extends 'pharmacyindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta name="viewport" content="width=device-width, ">-->
+<!--<title>edit medicine</title>-->
+<style type="text/css">
+
+	body
+	{
+
+		}
+	table
+		{
+		transform: scale(1,.9);
+		color:white;
+		width:50%;
+		text-align:left;
+		}
+
+		#title
+		{
+		  font-size:30px;
+		  letter-spacing:3px;
+		  font-weight:900;
+		}
+	input
+		{
+		width:100%;
+		background-color:transparent;
+		border:none;
+		border-bottom:1px  solid #555;
+		outline:none;
+		color:white;
+		}
+	#submit
+		{
+		width:50%;
+		height:50px;
+		font-weight:900;
+		background-color:transparent;
+		border:1px solid #fff;
+		letter-spacing:2px;
+		font-weight:900;
+		font-size:20px;
+
+		}
+			#submit:hover{
+		box-shadow:0px 0px 5px #fff;
+		 background:#fff;
+		 color:#000;
+		}
+	p
+		{
+		font-weight:900;
+		letter-spacing:2px;
+		}
+</style>
+</head>
+<body>
+	<form action="/editmed" method="post" enctype="multipart/form-data">
+		<table cellspacing="30" align="center">
+			<tr>
+			<td colspan="2" align="center" id="title">EDIT MEDICINE</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Medicine Name</p>
+			</td>
+			<td>
+			<input type="name" name="name" value="{{val[2]}}" required autofocus>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Description</p>
+			</td>
+			<td>
+			<input type="text" name="description" value="{{val[3]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Photo</p>
+			</td>
+			<td>
+				<img src="./static/medimg/{{val[4]}}" height="50px" width="50px"/>
+			<input type="file" name="photo">
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>Price</p>
+			</td>
+			<td>
+			<input type="number" name="price" value="{{val[5]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>EXP date</p>
+			</td>
+			<td>
+			<input type="date" name="date" value="{{val[6]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>dosage</p>
+			</td>
+			<td>
+			<input type="text" name="dosage" value="{{val[7]}}" required>
+			</td>
+			</tr>
+			<tr>
+			<td colspan="2" style="text-align:center;">
+			<input type="submit" value="UPDATE" id="submit">
+			</td>
+			</tr>
+		</table>
+	</form>
+</body>
+{% endblock %}
+<!--</html>-->

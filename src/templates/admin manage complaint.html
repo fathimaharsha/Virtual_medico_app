@@ -1,0 +1,64 @@
+{% extends 'adminindex.html' %}
+{% block body%}
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--<meta charset="utf-8"/>-->
+<!--<meta name="viewport" content="width=device-width">-->
+<!--<title>manage complaints</title>-->
+	<style type="text/css">
+			body
+		{
+		background:linear-gradient(#3455a4,#0865a0);
+		}
+		table
+			{
+			 text-align:center;
+			 width:100%;
+
+			color: white;
+			}
+		th{
+		text-align:center;
+		  color:#fff;
+		  padding:5px;
+		  background-color:#333;
+		}td{
+		  color:#fff;
+		  padding:5px;
+		  background-color:transparent;
+		}
+		button
+			{
+			width: 100%;
+			color:black;
+			background:transparent;
+			border: 1px solid #000;
+			}
+	</style>
+</head>
+
+<body>
+	<table cellspacing="1">
+	  <caption><h3>COMPLAINTS</h3></caption>
+		<tr>
+			<th>DATE</th>
+			<th>COMPLAINTS</th>
+			<th>user</th>
+			<th></th>
+		</tr>			{%for i in val%}
+
+			<tr>
+			<td>{{i[0]}}</td>
+			<td>{{i[1]}}</td>
+			<td>{{i[2]}}</td>
+			<td>
+				<a href="/admin_replay?id={{i[3]}}" style="color:white">REPLY</a>
+			</td>
+		</tr>
+		{%endfor%}
+	</table>
+</body>
+{%endblock%}
+<!--</html>-->
+

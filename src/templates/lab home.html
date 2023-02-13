@@ -1,0 +1,82 @@
+{% extends 'labindex.html' %}
+{% block body%}
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <meta http-equiv="content-type" content="text/html; charset=utf-8" />-->
+<!--    <meta name="viewport" content="width=device-width">-->
+<!--    <title>DOCTER HOME</title>-->
+    <style type="text/css" media="all">
+<!--      *{-->
+<!--        padding:0;-->
+<!--        margin:0;-->
+<!--        letter-spacing:2px;-->
+<!--      }-->
+    	 body{
+
+    	   }
+    	   #box{
+    	     width:70%;
+    	   }
+
+    	 p{
+    	   border:1px solid rgb(250,250,250);
+    	   color:white;
+    	   font-weight:900;
+    	   text-decoration:none;
+    	   display:inline-block;
+    	   width:100%;
+    	   padding:10px;
+    	   transition:500ms;
+    	 }
+    	 p:hover{
+    	   border:5px solid rgb(250,250,250);
+    	   background-color:rgb(250,250,250);
+    	   color:#3780ff;
+    	 }
+    </style>
+  </head>
+  <body>
+    <table border="0" id="box" cellspacing="10" align="center">
+
+
+
+      <tr>
+        <td>
+        <a href="/lab_location"><p>ADD LOCATION</p></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <a href="/ltest"><p>TEST DETAILS</p></a>
+        </td>
+      </tr>
+           <tr>
+        <td>
+        <a href="/lab_test_edit"><p>EDIT TEST DETAILS</p></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <a href="/lab_feedback"><p>ADD FEEDBACK</p></a>
+        </td>
+      </tr>
+        <tr>
+        <td>
+        <a href="/vfe"><p>VIEW FEEDBACK</p></a>
+        </td>
+      </tr>
+        <tr>
+        <td>
+        <a href="/deleteacclab"><p>DELETE ACCOUNT</p></a>
+        </td>
+      </tr>
+
+
+
+
+    </table>
+
+  </body>
+{%endblock%}
+<!--</html>-->
