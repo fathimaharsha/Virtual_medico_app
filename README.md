@@ -18,7 +18,7 @@ cancer or anything by himself instantly. This project also includes a website fo
 hospitals, labs, pharmacies and doctors to control their sections.
 <br>
 <br>
-# PROBLEM DEFINITION 
+<b>PROBLEM DEFINITION </b><br>
 Many people may face difficulties to consult a doctor, to purchase medicines and for 
 other medical related purposes because of lack of transportation, financial issues, health 
 problems, etc... Especially like in this time of pandemic it is not also safe to go outside our 
@@ -36,7 +36,7 @@ money and makes their lives more comfortable.
 pharmacies or check for the tests in the nearest laboratories. 
 • Predicting Cancer: People can check the status of their X-ray report with the help 
 of SVM classifier<br>
- # MOTIVATION
+<b> MOTIVATION</b><br>
  
  The motivation for doing this project was the present pandemic era where we all 
 are facing difficulties to consult a doctor safely or to go outside our homes for purchasing 
