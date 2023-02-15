@@ -29,11 +29,11 @@ The main objective of the project was to introduce a Virtual Doctor into the tip
 fingers who may consult and treat our issues easily. No one should face a situation of not 
 getting a proper consultation or medicine in this digital world. Anyone can take an appointment 
 or order medicines using the app without visiting hospitals or pharmacies. Other objectives of 
-the project are: 
+the project are: <br>
 • Time efficient and cost effective: This app helps people to save their time and 
-money and makes their lives more comfortable. 
+money and makes their lives more comfortable. <br>
 • Pharmacy and Laboratory Services: People can order medicine from the nearest 
-pharmacies or check for the tests in the nearest laboratories. 
+pharmacies or check for the tests in the nearest laboratories. <br>
 • Predicting Cancer: People can check the status of their X-ray report with the help 
 of SVM classifier<br><br>
 <b> MOTIVATION</b><br><br>
