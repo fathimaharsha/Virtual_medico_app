@@ -43,7 +43,7 @@ are facing difficulties to consult a doctor safely or to go outside our homes fo
 medicines, taking appointments, etc. So, people need a more effective solution for an instant and 
 safer solution for their health-related purposes.
 <br><br>
-<b>METHODOLOGY </b><br>
+<b>METHODOLOGY </b><br><br>
 There are various project management methodologies. We choose the traditional and 
 sequential methodology “Water fall” for doing our project. With this methodology, the tasks 
 are sequenced that lead to a final deliverable product. With this, one task must be completed 
