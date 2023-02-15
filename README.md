@@ -1,5 +1,5 @@
 # Virtual medico app
-<br><br>
+
 <b>SOFTWARE REQUIREMENTS </b><br><br>
 • Operating system : Windows 7/8 for better performance. <br>
 • Front end : Android, Python <br>
