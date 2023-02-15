@@ -1,6 +1,12 @@
 # Virtual medico app
-
-<br>
+<br><br>
+<b>SOFTWARE REQUIREMENTS </b><br><br>
+• Operating system : Windows 7/8 for better performance. <br>
+• Front end : Android, Python <br>
+• Back end : MySQL <br>
+• Software used : SQL yog, Adobe Dreamweaver, Python SDK <br>
+• IDE : Android Studio, JetBrains PyCharm
+<br><br>
 Usually, people may consult doctor and he will identify their illness and 
 prescribe the necessary medicines. But there can be situations where we will not be able to do a 
 direct consultation especially in the present days of the pandemic. As a solution to that, our app 
