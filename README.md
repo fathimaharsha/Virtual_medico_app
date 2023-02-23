@@ -1,5 +1,6 @@
 # Virtual medico app
-
+<br> ( The app isnt deployed and this was a guided project for my academic submission.)
+<br><br>
 <b>SOFTWARE REQUIREMENTS </b><br><br>
 • Operating system : Windows 7/8 for better performance. <br>
 • Front end : Android, Python <br>
